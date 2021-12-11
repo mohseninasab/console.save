@@ -6,7 +6,7 @@
   "permissions": ["storage", "activeTab", "scripting"],
   "background": {},
   "content_scripts": [{
-    "matches": ["https://*.com/*", "http://*.com/*"],
+    "matches": ["https://conjugator.reverso.net/*"],
     "js": ["content-script.js"]
   }],
   "icons": {
