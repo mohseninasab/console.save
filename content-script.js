@@ -1,5 +1,6 @@
-(function(){
-  document.querySelector(".sticky").remove()
-  document.querySelector(".top-horizontal").remove()
-  document.querySelector(".wrapperW").style.width = "100%"
-})()
+var s = document.createElement('script');
+s.src = chrome.runtime.getURL('script.js');
+s.onload = function() {
+    this.remove();
+};
+(document.head || document.documentElement).appendChild(s);
